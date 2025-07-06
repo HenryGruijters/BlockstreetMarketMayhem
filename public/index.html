@@ -14,7 +14,26 @@ const App = () => {
   return (
     <div className="min-h-screen text-gray-100 font-inter vaporwave-bg">
       <style>
-        {
+        {`
+          /*
+           * To use these fonts explicitly with Tailwind CSS,
+           * ensure you link them in your public/index.html <head>:
+           * <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+           *
+           * And configure your tailwind.config.js like this:
+           * // tailwind.config.js
+           * module.exports = {
+           * theme: {
+           * extend: {
+           * fontFamily: {
+           * inter: ['Inter', 'sans-serif'],
+           * electrolize: ['Electrolize', 'sans-serif'],
+           * },
+           * },
+           * },
+           * // ... other configurations
+           * };
+           */
           body {
             font-family: 'Inter', sans-serif; /* Default body font */
           }
